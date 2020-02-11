@@ -1,0 +1,24 @@
+Il primo passo è realizzare la cartella nascosta in cui andranno la chiave pubblica e quella privata
+
+  mkdir .ssh
+
+  cd .ssh
+
+Successivamente si generano le chiavi 
+
+  ssh -keygen
+
+Si da invio a tutti i prompt che vengono proposti 
+
+Si prende il contenuto della chiave pubblica e lo si inserisce all'interno del file Authorized_keys e gli si cambiano i permessi
+
+  cat id_rsa.pub > Authorized_keys
+
+  chmode 600 Authorized_keys
+
+Si copia il contenuto della chiave privata e lo si inserisce 
+
+  cat id_rsa 
+  
+Lo si passa su Windows e lo si converte in una chiave putty tramite PUTTY GEN nella sezione Conversion > Import, si salva 
+la chiave privata ed è pronta per essere utilizzata per connettersi in remoto.
