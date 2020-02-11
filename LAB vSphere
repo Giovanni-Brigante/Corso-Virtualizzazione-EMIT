@@ -1,0 +1,6 @@
+ vSphere è una piattaforma di virtualizzazione che permette la creazione, gestione e manutenzione di insiemi di macchine virtuali.
+ 
+ L'obiettivo di vSphere è quello di modernizzare i data center per massimizzare la flessibilità nel mercato Business.
+ 
+ Nel primo capitolo viene mostrata l'iterfaccia home di vSphere e vengono accennati alcuni servizi come : 
+  - vMotion il quale è il utile per la migrazione di macchine virtuali e/o dei dati di esse.
