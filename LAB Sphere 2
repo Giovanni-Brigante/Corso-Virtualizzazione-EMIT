@@ -1,0 +1,34 @@
+Questo capitolo è il challenge lab dove vengono proposti dei problemi e si devono trovare delle soluzioni.
+
+Problema 1 : 
+Il compito è quello di capire il motivo per cui ci son problemi nel migrare la macchina Challenge-01a a ad una delle macchine esx-04a /
+esx-05a / esx-06a.
+
+Il motivo è che la macchina challenge-01a ha pià risorse hardware delle macchine a cui noi interessa migrare, per cui la soluzione è diminuire
+i processori di Challenge-01a per matchare le caratteristiche hardware
+
+Problema 2 : 
+
+Il compito è quello di capire il motivo per cui due WM non riescono a comunicare tra di loro. Il ping test fallisce.
+
+Il problema è che la macchina virtuale Challenge-02a è su una rete virtuale diversa, per risolvere il problema : 
+- Andare su vSphere con Chrome.
+- Aprire VM and Templates dal menù a tendina
+- Tasto destro su challenge-02a, edit setting 
+- Menù networking cambiare da vss a vds di region01a
+
+Problema 3 : 
+
+ Il compito consiste nel creare una cartella condivisa dove mettere i Vmtools e caricarli nella cartella prelevandolo i file dalla macchina
+ esx-01a tramite win-scp. 
+ Soluzione : 
+ 
+- Aprire winspc
+- Trascinare i file wmtools nel pc principale
+- Andare nella home di vsphere nel menù a tendina aprire lo storage
+- Creare una folder nominata Shared-Wmtools e caricare i file di wmtools 
+- Per fare l'update della macchina andare in home, hosts e clusters e aprire la pagina della macchina. 
+- Aprire scheda configure e cercare Advanced system settings sotto la sezione system. 
+- Fare edit e cercare il valore UserVars.ProductLockerLocation e modificare il path con quello
+della cartella condivisa, nel nostro caso/vmfs/volumes/RegionA01-ISCSI01-COMP01/Shared-VMTools
+- Reboot della macchina per completare
