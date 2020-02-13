@@ -41,3 +41,13 @@ Il problema è alla terza riga, il comando "Get-Snapshot" non serve, va sostitui
 
 Problema 5 : 
 
+Sono stati avviati dei benchmark sulle macchine Challenge01a e Challenge04a, le caratteristiche hardware sono le stesse ma performano 
+in modo diverso.
+
+Il problema è nella configuraione hardware, in questo caso nella sezione cpu, una macchina ha 1000 share e un altra 2000 per questo 
+performano in modo diverso.
+
+Problema 6: 
+
+Un host ha degli spike di cpu, su questa macchina ci sono molte macchine virtuali, ma una sola occupa la maggior parte delle risorse.
+La soluzione è migrare la macchina virtuale che occupa molte risorse su un altro host.
