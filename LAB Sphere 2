@@ -32,3 +32,12 @@ Problema 3 :
 - Fare edit e cercare il valore UserVars.ProductLockerLocation e modificare il path con quello
 della cartella condivisa, nel nostro caso/vmfs/volumes/RegionA01-ISCSI01-COMP01/Shared-VMTools
 - Reboot della macchina per completare
+
+Problema 4 : 
+
+Errore nello script, dobbiamo correggerlo.
+
+Il problema è alla terza riga, il comando "Get-Snapshot" non serve, va sostituito con Get-VM
+
+Problema 5 : 
+
