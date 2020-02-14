@@ -67,3 +67,11 @@ La macchina virtuale non si accende perché cerca di accendersi con un numero di
 Problema 9 : 
 Compliance sul pc esx01a 
 Cambiare configurazione e rimuovere indirizzo ntp
+
+Problema 19:
+
+Un servizio che gira sulla macchina virtuale challenge-02a è sensibile alla latenza, cosa bisogna fare per ottimizzare la macchina virtuale?
+In edit settings > vm options > advanced si imposta la sensibilità alla latenza ad high. Syccesivamente in virtual hardware, espandere 
+cpu e mettere reservation al massimo, stessa cosa con la memoria.
+
+
