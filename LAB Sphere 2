@@ -51,3 +51,19 @@ Problema 6:
 
 Un host ha degli spike di cpu, su questa macchina ci sono molte macchine virtuali, ma una sola occupa la maggior parte delle risorse.
 La soluzione è migrare la macchina virtuale che occupa molte risorse su un altro host.
+
+Problema 7:
+
+E' arrivata una email che ci chiede di impostare un gruppo con determinati permessi per il nuovo junior developer.
+Per impostare i permessi andare nel menù a tendina e cliccare su administration, aggiungere il gruppo dal + e inserire i permessi.
+Per impostare i permessi invece andare su vm e template, sulla cartella development andare in permessi fare + e selezionare il dominio
+ a cui l'utente appartiene, inserire l'utente e il ruolo appena creato, fare aggiungi.
+ 
+
+Problema 8 : 
+La macchina virtuale non si accende.
+La macchina virtuale non si accende perché cerca di accendersi con un numero di CPU non supportato, basta cambiare numero cpu per farla accendere.
+
+Problema 9 : 
+Compliance sul pc esx01a 
+Cambiare configurazione e rimuovere indirizzo ntp
